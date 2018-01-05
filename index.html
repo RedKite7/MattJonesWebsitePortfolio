@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="DandelionWebIIStyleII.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+<Title id="docTitle"> Dandelion Web - Website Design and Development by Matt Jones </title> 
+</head>
+<body>
+<!-- Navbar and title --> 
+
+<div class="wideGreenNav">
+</div>
+<div id="wholeNav" class="navFlexContainer">
+	<a href="index.html">
+		<div class="navFlexHeadingChild">
+			<h1>Dandelion Web</h1> 
+			
+		<!-- <h4> getting your ideas moving </h4> --> 
+		</div>
+	</a>
+	<div class="navFlexMenuChild" onmouseenter="animateI()" ontouchstart="animateI()" onmouseleave="deanimateI()" onclick="deanimateI()" ontouchmove="deanimateI()">
+		<a href="webproductsII.html" > <h3>products</h3> </a> 
+		<div class="dotAnimationContainer" id="doti">
+			<div class="dot dot1 doti" >
+			</div>
+			<div class="dot dot2 doti">
+			</div>
+			<div class="dot dot3 doti">
+			</div> 
+		</div> 
+	</div>
+	<div class="navFlexMenuChild" onmouseenter="animateI()" ontouchstart="animateII()" onmouseleave="deanimateII()" onclick="deanimateII()" ontouchmove="deanimateII()">
+		<a href="portfolioII.html"> <h3>portfolio</h3> </a> 
+		<div class="dotAnimationContainer" id="dotii">
+			<div class="dot dot1 dotii">
+			</div>
+			<div class="dot dot2 dotii">
+			</div>
+			<div class="dot dot3 dotii">
+			</div> 
+		</div> 
+	</div>
+<!--	<div class="navFlexMenuChild" onmouseenter="animateIII()" ontouchstart="animateIII()" onmouseleave="deanimateIII()" onclick="deanimateIII()" ontouchmove="deanimateIII()">
+		<a href="#footer"> <h3>projects</h3> </a>
+		<div class="dotAnimationContainer" id="dotiii">
+			<div class="dot dot1 dotiii">
+			</div>
+			<div class="dot dot2 dotiii">
+			</div>
+			<div class="dot dot3 dotiii">
+			</div> 
+		</div> 
+	</div> -->
+	<div class="navFlexMenuChild" onmouseenter="animateIV()" ontouchstart="animateIV()" onmouseleave="deanimateIV()" onclick="deanimateIV()" ontouchmove="deanimateIV()">
+		<a href="#footer"> <h3>credits</h3> </a> 
+		<div class="dotAnimationContainer" id="dotiv">
+			<div class="dot dot1 dotiv">
+			</div>
+			<div class="dot dot2 dotiv">
+			</div>
+			<div class="dot dot3 dotiv">
+			</div> 
+		</div> 
+	</div>
+	<div class="frame"> 
+		<h4 class="followText"> follow me on: </h4> 
+			<div class="social">
+				<a href=""> <img class="fb" src="FB-fLogo-Blue-broadcast-2 (1).png" alt="link to facebook" height="40" width="40" > </a>
+				<a href="https://www.linkedin.com/in/matt-jones-8a79a5149/"> <img class="li" src="In-2C-108px-TM.png" alt="link to linkedin" height="40" width="40"> </a>
+			</div>
+	</div> 
+	<img id="menuOpenButton" class="menuButton"src="menu3bar.png" width="50" height="50" onclick="openMenu()"> 
+	<img id="menuCloseButton" class="menuButton" src="menu3barcross2.png" width="50" height="50" onclick="closeMenu()">
+	
+	
+</div> 
+
+<!-- Secondary menu - only appears on mobile devices when javascript activates it. --> 
+
+<div id="hiddenMenuContainer">
+	<a href="index.html"> <h3 class="hiddenMenuItem">home</h3> </a> 
+	<a href="webproductsII.html" > <h3 class="hiddenMenuItem">products</h3> </a> 
+	<a href="portfolioII.html"> <h3 class="hiddenMenuItem">portfolio</h3> </a> 
+	<a href="#footer"> <h3 class="hiddenMenuItem">credits</h3> </a>
+	<a href=""> <img class="hiddenSocial block" src="FB-fLogo-Blue-broadcast-2 (1).png" alt="link to facebook" height="40" width="40" > </a>
+	<a href="https://www.linkedin.com/in/matt-jones-8a79a5149/"> <img class="hiddenSocial block" src="In-2C-108px-TM.png" alt="link to linkedin" height="40" width="40"> </a>
+		
+	
+</div> 
+
+<!-- Hero Image area--> 
+
+
+<div id="hContainer" class="heroContainer">
+	<div class=" hFrame">
+		<img id="dandImage" class="hero" src="nine-kopfer-295988paralel3.png">
+	</div>  
+	<div class="spacingHero">
+	</div> 
+	<div class="offerSister ">
+		<h1 class="offerH1"> Dandelion Web </h1> 
+		<p class="larger"> Personalised web design for small businesses in Oxfordshire. </p> </br>
+		<a href="webproductsII.html"> <p class="italic"> Get your ideas moving. </p> </a> 
+	</div> 
+	
+</div> 
+
+
+	
+
+<!-- About --> 
+<!-- <div class="subTitle"> 
+	<h2> Dandelion Web </h2>
+	<h4> < getting your ideas moving > </h4> 
+</div> -->
+<div class="flexAboutContainer">
+	<div id="lListener" class="aboutChild l" onmouseenter="revealLeft()" onmouseleave="hideLeft()">
+		<a class="aboutAnchor" href="webproductsII.html">	
+			<div id="hl" class="hover">
+			<h4> Dandelion Web </h4>
+			<p id="l"class="defaultHidden"> Dandelion Web provides a free service to entrepreneurs and small businesses: 
+			A personalised website to get your idea off the ground.
+			In return, you agree to allow Dandelion Web to showcase your site in the Portfolio. </p>
+		</div>
+		</a> 
+
+	</div> 
+	<div id="mListener" class="aboutChild m" onmouseenter="revealMiddle()" onmouseleave="hideMiddle()">
+		<a class="aboutAnchor" href="portfolioII.html"> 
+			<div id="hm" class="hover">
+				<h4 class="nonIndexHeading"> The Portfolio </h4>
+				<p id="m" class="defaultHidden"> The Portfolio has two sections: <br/> <br/>
+				1) Completed Projects showcases live sites. <br/> <br/>
+				2) Curiosity Projects are educational side projects using JavaScript, PHP and SQL. <br/> <br/>
+			</div>
+		</a> 
+		
+		
+	
+	</div> 
+	<div  id="rListener" class="aboutChild r" onmouseenter="revealRight()" onmouseleave="hideRight()" >
+		<div id="hr" class="hover">
+			<h4> Me </h4> 
+			<p id="r" class="defaultHidden"> My name is Matt Jones and I currently work as a freelance Supply Teacher and Private Tutor,
+			while in my free time I work on projects under the name Dandelion Web.  </p>
+		</div> 
+	</div> 
+</div>
+
+<!-- <img src="" alt="Dandelion Icon" width="80" height="auto">
+		
+		
+		
+		
+		<img src="" alt="Matt Icon" width="80" height="auto">
+		
+--> 
+
+<!-- Last Image -->
+
+<div class="lastImageContainer">
+	
+</div> 
+
+<div class="bottomGreen">
+	 
+</div>
+<script type="text/javascript" src="dandelionWebIIScript.js"></script>
+<script type="text/javascript" src="dandelionWebIIScriptIn.js"></script>
+</body> 
+<footer id="footer">
+	<div class="footerColumnFlex">
+		<div class="footerContact f">
+			<h4> Contact: </h4>
+			<p>
+			Email: mattsmercury7@gmail.com <br/> <br/> 
+			Phone: 09752784149 <br/> <br/> 
+			Follow me on social media: 
+			</p>
+			<div class="social frame"> 
+			<a href=""> <img class="fb" src="FB-fLogo-Blue-broadcast-2 (1).png" alt="link to facebook" height="40" width="40" > </a>
+			<a href="https://www.linkedin.com/in/matt-jones-8a79a5149/"> <img class="li" src="In-2C-108px-TM.png" alt="link to linkedin" height="40" width="40"> </a>
+			</div> 
+		</div>
+		
+		<div class="footerAbout f">
+			<h4> About </h4> 
+			<p> My name is Matt Jones and Dandelion Web is a fictional company website I use to show my work to potential employers and clients. 
+			<br/> <br/>
+			It is not a registered business in its current state and does not take payments or own any trademarks. 
+			</p> <br/>
+		</div> 
+	
+	
+		<div class="footerMap f">
+			<h4> Site Map </h4>
+			<p>
+			<a class="white underlined" href="index.html" alt=""> <p> Homepage </p> </a> 
+			<a class="white underlined" href="portfolioII.html" alt="webproductsII.html"> <p> Products </p> </a>
+			<a class="white underlined" href="webproductsII.html" alt="portfolioII.html"> <p> Portfolio </p> </a>
+		</div>
+		
+		<div class="footerCredits f">
+			<h4> Credits </h4> 
+			<p> Thank you to everyone on <a class="white underlined" href="https://unsplash.com/">unsplash.com</a> for their incredible work making open-source images available. <br/> <br/> 
+			Specific thanks to the following whose work features prominently on my sites: </p> 
+			<ul>
+				<li class="noLineSpacing"> "Whisper" by <a class="white underlined" href="https://unsplash.com/@enka80">Nine Köpfer</a></li>
+				<li class="noLineSpacing"> "Dandelion in the grass" by <a class="white underlined href="https://unsplash.com/@aaronburden"> Aaron Burden</a> </li> 
+				<li class="noLineSpacing"> "Dandelion umbrellas in macro" by <a class="white underlined" href="https://unsplash.com/@paultalbot">Paul Talbot</a> </li>
+				<li class="noLineSpacing"> "Monochrome tablet smartphone" by <a class="white underlined" href="https://unsplash.com/@laurenmancke">Lauren Mancke</a> </li>
+				<li class="noLineSpacing"> "Smiling woman with a phone" by <a class="white underlined" href="https://unsplash.com/@rawpixel"> rawpixel.com</a> </li> 
+		</div>
+		
+
+		
+
+		
+	</div> 
+</footer> 

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="DandelionWebIIStyleII.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+<Title id="docTitle"> Dandelion Web - Website Design and Development by Matt Jones </title> 
+</head>
+<body>
+<!-- Navbar and title --> 
+<div class="wideGreenNav">
+</div>
+<div id="wholeNav" class="navFlexContainer">
+	<a href="index.html">
+		<div class="navFlexHeadingChild">
+			<h1>Dandelion Web</h1> 
+			
+		<!-- <h4> getting your ideas moving </h4> --> 
+		</div>
+	</a>
+	<div class="navFlexMenuChild" onmouseenter="animateI()" ontouchstart="animateI()" onmouseleave="deanimateI()" onclick="deanimateI()" ontouchmove="deanimateI()">
+		<a href="webproductsII.html" > <h3>products</h3> </a> 
+		<div class="dotAnimationContainer" id="doti">
+			<div class="dot dot1 doti" >
+			</div>
+			<div class="dot dot2 doti">
+			</div>
+			<div class="dot dot3 doti">
+			</div> 
+		</div> 
+	</div>
+	<div class="navFlexMenuChild" onmouseenter="animateI()" ontouchstart="animateII()" onmouseleave="deanimateII()" onclick="deanimateII()" ontouchmove="deanimateII()">
+		<a href="portfolioII.html"> <h3>portfolio</h3> </a> 
+		<div class="dotAnimationContainer" id="dotii">
+			<div class="dot dot1 dotii">
+			</div>
+			<div class="dot dot2 dotii">
+			</div>
+			<div class="dot dot3 dotii">
+			</div> 
+		</div> 
+	</div>
+<!--	<div class="navFlexMenuChild" onmouseenter="animateIII()" onmouseleave="deanimateIII()">
+		<a href="#footer"> <h3>projects</h3> </a>
+		<div class="dotAnimationContainer" id="dotiii">
+			<div class="dot dot1 dotiii">
+			</div>
+			<div class="dot dot2 dotiii">
+			</div>
+			<div class="dot dot3 dotiii">
+			</div> 
+		</div> 
+	</div> -->
+	<div class="navFlexMenuChild" onmouseenter="animateIV()" ontouchstart="animateIV()" onmouseleave="deanimateIV()" onclick="deanimateIV()" ontouchmove="deanimateIV()">
+		<a href="#footer"> <h3>credits</h3> </a> 
+		<div class="dotAnimationContainer" id="dotiv">
+			<div class="dot dot1 dotiv">
+			</div>
+			<div class="dot dot2 dotiv">
+			</div>
+			<div class="dot dot3 dotiv">
+			</div> 
+		</div> 
+	</div>
+	<div class="frame"> 
+		<h4 class="followText"> follow me on: </h4> 
+			<div class="social">
+				<a href=""> <img src="FB-fLogo-Blue-broadcast-2 (1).png" alt="link to facebook" height="40" width="40" > </a>
+				<a href="https://www.linkedin.com/in/matt-jones-8a79a5149/"> <img src="In-2C-108px-TM.png" alt="link to linkedin" height="40" width="40"> </a>
+			</div>
+	</div> 
+	<img id="menuOpenButton" class="menuButton"src="menu3bar.png" width="50" height="50" onclick="openMenu()"> 
+	<img id="menuCloseButton" class="menuButton" src="menu3barcross2.png" width="50" height="50" onclick="closeMenu()">
+	
+	
+</div> 
+
+<!-- Secondary menu - only appears on mobile devices when javascript activates it. --> 
+
+<div id="hiddenMenuContainer">
+	<a href="index.html"> <h3 class="hiddenMenuItem">home</h3> </a> 
+	<a href="webproductsII.html" > <h3 class="hiddenMenuItem">products</h3> </a> 
+	<a href="portfolioII.html"> <h3 class="hiddenMenuItem">portfolio</h3> </a> 
+	<a href="#footer"> <h3 class="hiddenMenuItem">credits</h3> </a>
+	<a href=""> <img class="hiddenSocial block" src="FB-fLogo-Blue-broadcast-2 (1).png" alt="link to facebook" height="40" width="40" > </a>
+	<a href="https://www.linkedin.com/in/matt-jones-8a79a5149/"> <img class="hiddenSocial block" src="In-2C-108px-TM.png" alt="link to linkedin" height="40" width="40"> </a>
+		
+	
+</div> 
+
+<!-- Hero Image area--> 
+
+
+<div id="hContainer" class="heroContainer">
+	<div class="hFrame">
+		<img id="dandImage" class="hero" src="paul-talbot-704paralel3.png">
+	</div> 
+	
+	<div class="fillerWhite">
+	</div> 
+	<div class="offerSister">
+		<h1 class="offerH1"> Our Products </h1>
+		<p class="larger"> See the <a href="portfolioII.html" class="underlined">Portfolio</a> to see the results of previous projects.</p></br>
+		<p class="italic">	Get your ideas moving. </p>
+	</div> 
+	
+</div> 
+
+<!-- Information on products --> 
+
+<div class="infoSection">
+
+<h4 class="black uniqueWeCan nonIndexHeading"> We can build a website that's... </h4> 
+
+
+<div class="infoFlex">
+	<div class="info ia">
+		<h4 class="black nonIndexHeading bannerH"> At home on any screen </h4> 
+		<canvas id="iaCanvas" width="200" height="200"></canvas>
+		<p> Responsive design means sites look just as good on your laptop, tablet or phone. </p>
+		<svg class="infoSVG" viewBox="0 0 100 165">
+			<polygon points="0,0 100,0 100,165 50,145 0,165" style="fill:rgb(46, 204, 113);stroke:black;stroke-width:1" />
+		</svg>
+	</div>
+	<div class="info ib">
+		<h4 class="black nonIndexHeading bannerH"> Personalised </h4>
+		<canvas id="ibCanvas" width="200" height="200"></canvas>
+		<p> Take away the limits. Have it your way.  </p>
+		<svg class="infoSVG" viewBox="0 0 100 165">
+			<polygon points="0,0 100,0 100,165 50,145 0,165" style="fill:rgb(3, 166, 120);stroke:black;stroke-width:1" />
+		</svg>
+	</div>
+	<div class="info ic">
+		<h4 class="black nonIndexHeading bannerH"> Interactive </h4> 
+		<canvas id="icCanvas" width="200" height="200"></canvas>
+		<p> We can make a site respond to the user with a dynamic yet subtle feel. </p>
+		<svg class="infoSVG" viewBox="0 0 100 165">
+			<polygon points="0,0 100,0 100,165 50,145 0,165" style="fill:rgb(101, 198, 187);stroke:black;stroke-width:1" />
+		</svg>
+	</div>
+
+</div> 
+</div> 
+
+<h4> Your Commission </h4>  
+
+	<div class="commission"> 
+		<p> Commissioning a website is a collaborative, exciting project. Your site defines what people think about when they remember your company.
+		By working out exactly what you want as you begin and refining it throughout the process, you can ensure that the project reaches its maximum potential. 
+		Whether you know a little or a lot about coding, here are some things to think about before you start: <br/> <br/>
+		</p>
+		<ul> 
+			<li> Do I know who in my company will oversee the progress of the website, answering questions and giving feedback? </li>
+			<li> Have I looked at the websites of similar companies to identify their strengths and weaknesses? </li>
+			<li> Who do I want to visit and use the website? </li>
+			<li> What are the three most important things I want a visitor to know about the company? </li>
+			<li> What is the one function I would want implemented most urgently? </li>
+			<li> Which function could I live without for a while and be happy to see implemented later? </li>
+			<li> Which brand materials and style guides do I already use? </li>
+		</ul>
+	</div>
+	
+<h4> Get in touch </h4>
+ 
+	<div class="inTouch"> 
+		<p> I am looking for web development jobs and building my portfolio as I search. 
+		If you would like to commission a free project, or you are an employer looking for a candidate, please get in touch. 
+		Currently I am living in the Oxford area, but am willing to relocate and travel.
+		<br/> <br/>
+		Email: mattsmercury7@gmail.com <br/> <br/>
+		Phone: 07952784149
+		</p> <br/>
+	</div> 
+
+
+
+
+<!-- Footer --> 
+
+<div class="bottomGreen">
+	 
+</div>
+<script type="text/javascript" src="dandelionWebIIScript.js"></script>
+<script type="text/javascript" src="dandelionWebIIScriptProd.js"></script>
+</body> 
+<footer id="footer">
+	<div class="footerColumnFlex">
+		<div class="footerContact f">
+			<h4> Contact: </h4>
+			<p>
+			Email: mattsmercury7@gmail.com <br/> <br/> 
+			Phone: 09752784149 <br/> <br/> 
+			Follow me on social media: 
+			</p>
+			<div class="social frame"> 
+			<a href=""> <img src="FB-fLogo-Blue-broadcast-2 (1).png" alt="link to facebook" height="40" width="40" > </a>
+			<a href="https://www.linkedin.com/in/matt-jones-8a79a5149/"> <img src="In-2C-108px-TM.png" alt="link to linkedin" height="40" width="40"> </a>
+			</div> 
+		</div>
+
+				
+		<div class="footerMap f">
+			<h4> Site Map </h4>
+			<p>
+			<a class="white underlined" href="index.html" alt=""> <p> Homepage </p> </a> 
+			<a class="white underlined" href="portfolioII.html" alt="webproductsII.html"> <p> Products </p> </a>
+			<a class="white underlined" href="webproductsII.html" alt="portfolioII.html"> <p> Portfolio </p> </a>
+		</div>
+		
+		<div class="footerAbout f">
+			<h4> About </h4> 
+			<p> My name is Matt Jones and Dandelion Web is a fictional company website I use to show my work to potential employers and clients. 
+			<br/> <br/>
+			It is not a registered business in its current state and does not take payments or own any trademarks. 
+			</p> 
+			<br/>
+		</div> 
+		
+		<div class="footerCredits f">
+			<h4> Credits </h4> 
+			<p> Thank you to everyone on <a class="white underlined" href="https://unsplash.com/">unsplash.com</a> for their incredible work making open-source images available. <br/> <br/> 
+			Specific thanks to the following whose work features prominently on my sites: </p> 
+			<ul>
+				<li class="noLineSpacing"> "Whisper" by <a class="white underlined" href="https://unsplash.com/@enka80">Nine Köpfer</a></li>
+				<li class="noLineSpacing"> "Dandelion in the grass" by <a class="white underlined href="https://unsplash.com/@aaronburden"> Aaron Burden</a> </li> 
+				<li class="noLineSpacing"> "Dandelion umbrellas in macro" by <a class="white underlined" href="https://unsplash.com/@paultalbot">Paul Talbot</a> </li>
+				<li class="noLineSpacing"> "Monochrome tablet smartphone" by <a class="white underlined" href="https://unsplash.com/@laurenmancke">Lauren Mancke</a> </li>
+				<li class="noLineSpacing"> "Smiling woman with a phone" by <a class="white underlined" href="https://unsplash.com/@rawpixel"> rawpixel.com</a> </li> 
+		</div>
+
+	</div> 
+</footer> 

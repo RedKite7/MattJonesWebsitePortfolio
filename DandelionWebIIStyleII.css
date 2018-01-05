@@ -1,0 +1,1543 @@
+/*Whole Page Styles */
+
+html {
+	border: 0;
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box; 
+}
+
+body {
+	border: 0;
+	margin: 0;
+	padding: 0; 
+	
+}
+
+.correctionClassL {
+	visibility: visible;
+	height: auto;
+	
+	background-color: rgba(219, 208, 138, 0.9);
+}
+
+.correctionClassM {
+	visibility: visible;
+	height: auto;
+	
+	background-color: rgba(256, 256, 256, 0.9);
+	
+}
+
+.correctionClassR {
+	visibility: visible;
+	height: auto;
+	padding-bottom: 1rem;
+	background-color: rgba(147, 193, 226, 0.9)
+}
+
+/* Text and Heading Styles */ 
+
+
+
+a {
+	text-decoration: none; 
+	/* padding: 2rem; deleted so individual inline links didn't look weird. May affect other anchors adversely. */ 
+	color: black; 
+	
+} 
+
+.white {
+	color: white; 
+}
+
+.underlined {
+	
+	text-decoration: underline;
+}
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: white; 
+	font-size: 2.6rem; 
+	
+	text-shadow: 2px 2px #000000;
+	margin-left: 1rem; 
+}
+
+h2 {
+	font-family: 'Ubuntu', sans-serif;
+	color: white; 
+	font-size: 2.4rem; 
+	text-shadow: 1px 1px #000000;
+	padding: 1.4rem; 
+	text-align: center; 
+		margin: 0 auto 0 auto; 
+	padding-top: 200px; 
+	padding-bottom: 200px; 
+}
+
+h3 {
+	font-family: 'ubuntu', sans-serif;
+	font-size: 1.1rem; 
+	color: white; 
+	text-shadow: 0.06em 0.06em #000000;
+	margin: 0; 
+	text-align: center; 
+	
+}
+
+h4{
+	font-family: 'Dosis', sans-serif;
+	text-align: center; 
+	font-size: 1.6rem; 
+	margin: 0;
+	padding: 1.6rem; 
+}
+
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0.1rem 1rem 0.1rem 1rem;
+	max-width: 400px; 
+	font-size: 1rem;
+	margin: auto; 
+	justify-content: center; 
+	text-align: center; 
+}
+
+li {
+	font-family: 'Open Sans', sans-serif;
+	padding: 1rem 1rem 1rem 1rem;
+	max-width: 400px; 
+	font-size: 1rem;
+	margin: auto; 
+	
+	text-align: left; 
+}
+
+.defaultHidden {
+	visibility: hidden; 
+}
+
+.italic {
+	font-style: italic; 
+	font-size: 2.6rem;
+	padding: 2rem; 
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.larger {
+	font-size: 1.8rem; 
+}
+
+.capitalise {
+	text-transform: uppercase; 
+	font-size: 2.6rem;
+	padding: 2rem; 
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.navFlexHeadingChild h1:hover {
+	color: white; 
+	text-decoration-color: white; 
+	text-decoration: none; 
+	text-shadow: 3px 3px #000000;
+}
+
+h3:hover {
+	
+}
+
+.ph2 {
+	background-color: rgb(88, 150, 43);
+	margin: 0;
+	padding: 1rem; 
+	
+}
+
+.black {
+	color: black;
+	margin: 0;
+	padding: 1rem; 
+}
+
+.noLineSpacing {
+	padding: 0; 
+
+}
+
+.block {
+	display: block;
+	margin: 0rem auto 1rem auto; 
+}
+
+
+/* Nav */
+
+.menuButton {
+	display: none; 
+	position: relative;  
+}
+
+.wideGreenNav {
+	width: 100%;
+	height: 5rem;
+	background-color:  rgb(88, 150, 43); /* rgb(88, 150, 43); */
+	position: absolute;
+	top: 0; 
+	z-index: -1; 
+}
+
+.navFlexContainer {
+	display: flex; 
+	
+	background-color:  rgb(88, 150, 43);
+	/* background: linear-gradient(to bottom, rgb(101, 163, 59) 0%, rgb(88, 138, 43) 100%); */
+	width: 70%;
+	margin: auto; 	
+	height: 5em; 
+	align-items: center; 
+	justify-content: space-around; 
+	
+	z-index: 200; 
+}
+
+.halfwayUp {
+	z-index: 1; 
+}
+
+.up {
+	z-index: 5; 
+}
+
+.down {
+	z-index: -2;
+}
+
+.navFlexHeadingChild {
+	margin: 0 3rem 0 0rem;
+	
+}
+
+.navFlexMenuChild {
+	margin: 0.6rem 3rem 0.6rem 0rem;
+}
+
+.navFlexSocialChild {
+	background-color: white; 
+	padding: 1rem; 
+	border-radius: 5px; 
+}
+
+.navFlexSocialChild a {
+	margin: 0;
+}
+
+.followText {
+	margin: 0;
+	padding: 0.1em; 
+	font-size: 1.1rem; 
+	
+}
+
+/* Nav hover animation*/
+
+.dotAnimationContainer {
+	position: relative; 
+	
+}
+
+.dot {
+	width: 4px; 
+	height: 4px;
+	border-radius: 50%; 
+	background-color: white; 
+	display: block; 
+	position: absolute; 
+	z-index: 10; 
+	margin: 0.3em 0 0 0; 
+	animation-duration: 1s;
+	animation-iteration-count: 2;
+	animation-direction: alternate; 
+	
+}
+
+.rB {
+	display: none; 
+}
+
+#doti {
+	display: none; 
+}
+
+#dotii {
+	display: none; 
+}
+
+#dotiii {
+	display: none; 
+}
+
+#dotiv {
+	display: none; 
+}
+
+.dotii {
+	
+}
+
+.dotiii {
+	
+}
+
+.dotiv {
+	
+}
+
+@keyframes dot1journey {
+	from {
+		margin-left: 0; 
+		
+	}
+	
+	30% {
+		margin-left: 0;
+		
+	}
+	
+	70% {
+		margin-left: 80%;  
+	}
+	
+	to {
+		margin-left: 80%;  
+} }
+
+@keyframes dot2journey {
+	from {
+		margin-left: 0; 
+		
+	}
+	
+	20% {
+		margin-left: 0;
+		
+	}
+	
+	60% {
+		margin-left: 80%;  
+	}
+	
+	to {
+		margin-left: 80%;  
+} }
+
+@keyframes dot3journey {
+	from {
+		margin-left: 0; 
+		
+	}
+	10% { 
+		margin-left: 0;
+		
+	}
+	50% {
+		margin-left: 80%;  
+	}
+	to {
+		margin-left: 80%;  
+	} 
+}
+
+.dot1 {
+	animation-name: dot1journey;
+}
+	
+.dot2 {
+	left: 1rem; 
+	animation-name: dot2journey;
+}
+
+.dot3 {
+	left: 2rem; 
+	animation-name: dot3journey;
+}
+
+/* Secondary Menu- only visible when mobile device calls function openMenu */ 
+
+#hiddenMenuContainer {
+	height: 0; 
+	overflow: hidden; 
+	transition: height, 1s; 
+	-webkit-transition: height 1s;
+	transition-timing-function: ease-in-out; 
+	background-color: rgb(88, 150, 43);
+}
+
+.hiddenMenuItem {
+	
+	padding: 1rem; 
+}
+
+.hiddenSocialBlock img {
+	width: 30px;
+	height: 30px; 
+}
+
+/* Hero */
+
+.heroContainer {
+	display: flex; 
+	justify-content: left; 
+	width: 70%; 
+	max-height: 550px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0; 
+	position: relative; 
+	background-color: #d5c242;
+	margin-bottom: 1rem;	
+	box-sizing: border-box; 
+	border: solid 0.05rem black; 
+	
+}
+
+.hFrame { 
+	overflow: hidden; 
+	max-width: 800px; 
+	flex-grow: 1; 
+	max-height: 500px; 
+	
+}
+
+.hero {
+	background-size: cover; 
+	width: 100%;
+	box-sizing: border-box;
+	transition: all 4s; 
+}
+.spacingHero {
+		width: 0rem; 
+		height: auto; 
+		flex-grow: 2;
+		flex-shrink: 2; 
+		background-color: rgba(256, 256, 256, 0);
+	}
+	
+.offerH1 {
+	font-size: 3.6rem; 
+	padding: 0.1rem 2rem;
+	text-align: center; 
+	text-shadow: none;
+	color: black; 
+
+	
+}
+	
+	
+
+.offerSister {
+	padding: 2rem 7%;
+	z-index: 1;
+	position: absolute;
+	right: 0; 
+}
+
+
+
+.offerSister p {
+	
+	text-align: center; 
+}
+
+/* About */
+
+.flexAboutContainer {
+	border-top: solid rgba(256, 256, 256, 1) 0.2rem; 
+	display: flex; 
+	background-color: white; 
+	align-items: top; 
+	justify-content: center;
+	border-bottom: solid rgba(256, 256, 256, 1) 0.2rem; 
+	width: 70%; 
+	margin: auto; 
+	
+}
+
+.subTitle>h2 {
+	color: black; 
+	text-shadow: none; 
+	margin-bottom: 0; 
+}
+
+.subTitle>h4 {
+	color: black;
+text-shadow: none; 	
+}
+
+.aboutChild {
+	overflow: hidden; 
+	flex-grow: 2; 
+	background-size: cover; 
+	border: solid black 0.1rem; 
+	
+}
+
+.l {
+	background-image: url("aaron-burden-88770.png");
+}
+
+.m {
+	background-image: url("portfolioImageii.png");
+	background-position: right center;
+}
+
+.r {
+	background-image: url("me.png");
+	background-position: right top;
+}
+
+.aboutAnchor {
+	width: 100%;
+	height: auto; 
+	padding: 0; 
+}
+
+.aboutChild>img {
+	background-size: cover;
+	background-position: right bottom; 
+	max-height: 200px; 
+}
+
+.aboutChild>h4 {
+
+	color: black; 
+	text-shadow: none; 	
+	font-style: normal; 
+}
+
+.aboutChild>p {
+	color: black;
+	padding: 1rem; 
+	margin: 0; 
+		 -webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+}
+
+.aboutChild>a {
+	text-decoration: none; 
+	color: black; 
+}
+
+.aboutChild>a:hover {
+	text-decoration: none; 
+	color: black; 
+}
+.hover {
+	width: 100%; 
+	height: 100%; 
+	 -webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+}
+
+.aboutChild:first-child {
+	margin-right: 1rem; 
+}
+
+.aboutChild:last-child {
+	margin-left: 1rem; 
+}
+
+.uniqueWeCan {
+	padding: 1rem 0 2rem 0;
+}
+
+.commission {
+	background-image: url("rawpixel-com-191157.png");
+	border: solid black 0.05rem; 
+	background-repeat: no-repeat;
+	width: 70%; 
+	margin: auto; 
+	background-position: right top;
+}
+
+.commission>p {
+	max-width: 500px;
+	text-align: left; 
+	margin: 2rem 0 0 2rem; 
+}
+
+.commission>ul {
+	margin: 0 0 0 2rem; 
+}
+
+.commission>ul>li {
+	margin: 0 0 0 2rem; 
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem; 
+}
+
+.commission>ul>li:last-child {
+	margin: 0 0 2rem 2rem; 
+	
+}
+
+.inTouch {
+	background-image: url("aaron-burden-887702.png");
+	border: solid black 0.05rem; 
+	width: 50%; 
+	margin: auto; 
+	background-position: right top;
+	background-repeat: no-repeat; 
+}
+
+.inTouch>p {
+	max-width: 600px;
+	text-align: left; 
+	margin: 2rem 0 0 2rem; 
+	word-wrap: break-word;
+}
+/* Portfolio Page */ 
+
+#realizeShowcase {
+	width: 45%;
+	
+	height: auto;
+	flex-grow: 5;
+	flex-shrink: 5; 
+	margin-right: 1rem;
+	position: flex; 
+	box-sizing: border-box; 
+	margin-top: 4rem;
+	margin-bottom: 4rem; 
+	margin: auto;  
+	background-color: rgb(255, 192, 0); 
+}
+
+.realizeSlide {
+	width: 100%; 
+	display: none; 
+	margin: auto; 
+	width: cover; 
+	height: auto; 
+	margin: auto;
+} 
+
+.projectsInDev {
+	
+	width: 70%; 
+	margin: auto; 
+	display: flex; 
+	justify-content: space-between;
+}
+
+.aProjectText {
+	padding: 0.5rem; 
+	font-size: 0.9rem; 
+}
+
+.projectHeader {
+	
+	width: 100%;
+	height: 6rem; 
+	box-sizing: border-box; 
+	background-image: url("realizeScreenshot.png");
+	background-repeat: no-repeat;
+	background-color: rgb(255, 192, 0);
+	background-size: contain; 
+	padding-right: 30%; 
+	position: relative; 
+	
+}
+
+.dandelionProjectHeader {
+	
+	width: 100%;
+	height: 6rem; 
+	background-color: rgb(88, 150, 43);
+}
+
+.dandelionProject {
+	text-align: center; 
+	margin: auto; 
+	font-size: 2rem;
+	padding: 2rem 0;
+	
+}
+
+.masterImageFrame {
+	width: 100%;
+	height: auto; 
+	margin: auto; 
+	box-sizing: border-box; 
+	overflow: hidden; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	position: relative; 
+	align-items: center; 
+	justify-content: center; 
+}
+
+.extraInfoRealize {
+	background-color: #ffffff; 
+	display: block; 
+	width: 45%;
+	height: auto;  
+	margin-left: 1rem; 
+	position: relative; 
+	
+	box-sizing: border-box; 
+}
+
+.fullSize {
+	width: 100%;
+	height: auto; 
+	
+	box-sizing: border-box; 
+}
+
+.thumbnail {
+	display: inline-block; 
+}
+
+.button {
+	width: 8rem;
+	height: 4rem; 
+	color: white;
+	background-color: rgba(88, 150, 43, 0.7);
+	border: solid white 0.2rem; 
+	font-size: 2rem; 
+	margin-right: auto; 
+	margin-left: auto; 
+	z-index: 11; 
+	position: absolute;
+	 
+}
+
+.portfolioB {
+	position: absolute; 
+	right: 1rem; 
+	top: 1rem; 
+}
+
+.portfolioB p {
+	color: white;
+	font-size: 1.2rem; 
+	padding: 0.7em; 
+}
+
+.portfolioButton:hover {
+	background-color: #d5c242;
+}
+
+.dotAnimationContainerPortfolio {
+	margin-left: 0.2rem; 
+}
+
+.portfolioButton h3 {
+	padding-top: 0.5em; 
+	margin: 0 auto;
+}
+
+.buttonAnchor {
+	width: 100%; 
+	height: 4rem; 
+	padding: 0;
+	display: block; 
+	
+	top: 0;
+	left: 0;
+}
+
+.back {
+	margin: 1em; 
+	left: 0; 
+	bottom: 0;
+	position: absolute;
+	width: 4rem; 
+}
+
+.back:hover, .forward:hover, .portfolioB:hover {
+	cursor: pointer;
+	background-color: #68b234;
+}
+
+.forward {
+	margin: 1em; 
+	right: 0; 
+	bottom: 0;
+	position: absolute;
+	width: 4rem; 
+}
+
+.arrow {
+	font-size: 2.6rem; 
+	padding: 0; 
+}
+
+/* Products */
+
+.infoFlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+	width: 70%;
+	margin: auto; 
+	 
+	
+}
+
+canvas {
+	border: solid black 0.05rem;
+	background-color: black; 
+}
+
+.infoSVG {
+ 
+position: absolute; 
+z-index: -1; 
+width: 100%;
+top: 0; 
+left: 0; 
+
+}
+
+ .black {
+	color: black; 
+} 
+
+.info {
+	margin: 0 2rem; 
+	text-align: center; 
+	height: 30rem;
+	width: 18rem; 
+	position: relative; 
+}
+
+canvas {
+	overflow: hidden;
+	border-radius: 50%; 
+	background-color: white /* rgb(219, 208, 138) */; 
+}
+
+
+.info h4 {
+	
+	text-align: center; 
+}
+
+.info p {
+	max-width: 200px; 
+	
+}
+
+/*Greyspace */
+
+.footerColumnFlex {
+	display: flex; 
+	justify-content: space-between; 
+	padding: 0 5% 0 5%; 
+	width: 70%; 
+	margin: auto; 
+}
+
+.footerCredits2 {
+	flex-shrink: 2; 
+}
+
+footer {
+	
+	background-color: rgb(57, 58, 57); 
+	color; white; 
+	
+}
+
+.bottomGreen {
+	border-top: solid 1rem #ffffff;
+	background-color: #d5c242; 
+	padding: 2rem; 
+}
+
+.small {
+	font-size: 3rem; 
+	text-align: center;
+	margin: auto; 
+}
+.f {
+	width: 30%;
+	color: white; 
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	}
+	
+.social img {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#invisibleIndicatorOfHoverEnabled {
+	/* visibility: none; */
+	color: green; 
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1700px) {
+	.offerSister {
+		padding: 2rem 2%; 
+	}
+	
+	.info {
+		margin: 0; 
+	}
+	.ib { 
+	margin: 0 2rem; 
+	}
+	
+	.projectsInDev {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+		.offerH1 {
+		font-size: 3.2rem; 
+		
+	}
+	
+	.larger {
+		font-size: 1.5rem;
+	}
+	
+	.italic {
+		font-size: 2.2rem;
+	}
+	
+	.offerSister {
+		padding: 2rem 0;
+		max-width: 40%;
+	}
+	
+	.m {
+	background-position: center center; 
+	}
+	
+	.r {
+		background-position: left center; 
+	}
+}
+
+
+
+@media screen and (max-width: 1320px) {
+
+	
+	h1 {
+		font-size: 2.2rem;
+	}
+	
+	.navFlexContainer {
+		width: 80%;
+	}
+	
+	.heroContainer {
+		width: 80%;
+	}
+	
+	.flexAboutContainer {
+		width: 80%;
+	}
+	
+	.footerColumnFlex {
+		width: 80%; 
+	}
+	
+	.infoFlex {
+		width: 80%; 
+	}
+	
+	.commission, .inTouch {
+		width: 80%; 
+	}
+	
+	.info p {
+	
+		max-width: 220px; 
+	}
+	
+	.footerMap {
+		flex-shrink: 1.8;
+		width: 20%; 		
+	}
+	
+	.f {
+		width: 30%; 
+	}
+
+	.aProjectText {
+		padding: 0.2rem 0.2rem 0.2rem 0.6rem; 
+		font-size: 0.8rem; 
+	}
+	
+	li {
+		
+	}
+	
+	.commission {
+		background-image: url("rawpixel-com-1911572.png"); 
+		
+	}
+}
+
+@media screen and (max-width: 1148px) {
+	.projectHeader {
+		height: 4rem;
+	}
+	
+	.portfolioB {
+		height: 3rem;
+		top: 0.5rem; 
+	}
+	
+	.portfolioB p {
+		padding: 0.35em;
+	}
+	
+	.dandelionProject {
+		font-size: 1.4rem;
+		padding: 1.3rem; 
+	}
+	
+	.dandelionProjectHeader {
+		height: 4rem; 
+		
+	}
+}
+
+
+@media screen and (max-width: 1040px) {
+	.navFlexContainer {
+		width: 100%;
+	}
+	
+	.heroContainer {
+		width: 100%;
+	}
+	
+	.flexAboutContainer {
+		width: 100%;
+	}
+	
+	.footerColumnFlex {
+		width: 90%; 
+	}
+	
+	.projectsInDev {
+		width: 100%;
+	}
+	
+	.infoFlex {
+		width: 100%; 
+	}
+	
+	.commission, .inTouch {
+		width: 100%; 
+		border-left: 0;
+		border-right: 0; 
+	}
+	
+	.ia { 
+	margin-left: 2rem; 
+	}
+	
+	.ic { 
+	margin-right: 2rem; 
+	}
+	
+	li {
+		font-size: 0.9rem;
+	}
+	
+	p {
+		font-size: 0.9rem;
+	}
+	
+	.followText {
+		font-size: 0.9rem;
+	}
+
+
+
+}
+
+@media screen and (max-width: 925px) {
+	.infoFlex {
+		display: block; 
+	}
+	
+	.info {
+		margin: 2rem auto 0 auto; 
+	}
+	
+	p {
+		text-rendering: optimizeLegibility;
+	}
+	
+	.footerColumnFlex {
+		 flex-wrap: wrap;
+		max-height: 750px;
+		flex-direction: column;
+			
+	}
+	
+	.f {
+		min-width: 20em; 
+	}
+	
+	.commission {
+		background-image: url("rawpixel-com-1911573.png"); 
+		
+	}
+}
+
+@media screen and (max-width: 840px) {
+	
+.projectsInDev {
+	flex-direction: column; 
+}
+
+#realizeShowcase {
+	width: 70%; 
+}
+	
+.extraInfoRealize {
+	margin: 1rem auto 1rem auto; 
+	width: 70%; 
+}
+
+}
+
+@media screen and (max-width: 808px) {
+h1 {
+		font-size: 1.8rem;
+		text-align: center; 
+		margin: 1rem 0 1rem 0rem; 
+}
+
+.navFlexHeadingChild {
+	margin: 0; 
+	width: auto; 
+}
+
+.navFlexMenuChild {
+	margin: 0 0 0 1rem; 
+}
+
+.offerH1 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 0.9rem; 
+}
+
+.larger {
+	font-size: 1.1rem; 
+}
+
+.italic {
+	font-size: 1.4rem; 
+}
+
+.social img {
+	margin: 0.1em;
+	margin: 0.1em;
+	flex-shrink: 1.2;
+}
+
+.f {
+	font-size: 0.5;
+	min-width: 12em; 
+}
+
+ul {
+	-webkit-padding-start: 0;
+}
+
+.hFrame {
+	max-height: 450px; 
+}
+
+
+}
+
+
+
+@media screen and (max-width: 708px) {
+#realizeShowcase, .extraInfoRealize {
+	width: 90%;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+	
+	.hFrame {
+		max-height: 21em;
+	}
+	
+	.social img {
+	width: 25px;
+	height: 25px; 
+}
+
+.flexAboutContainer {
+	display: block; 
+}
+
+.aboutChild {
+	width: 60%; 
+	min-height: 20rem; 
+	margin: auto;
+	margin-top: 1rem;
+	box-sizing: border-box; 
+}
+
+.hover {
+	box-sizing: content-box;
+	width: 99%;
+	margin: 0 0.1rem 0.1rem 0.1rem; 
+}
+
+.nonIndexHeading {
+	box-sizing: border-box; 
+}
+
+.aboutAnchor {
+	
+}
+
+.aboutChild:first-child {
+	margin: auto; 
+}
+
+.aboutChild:last-child {
+	margin: 1rem auto 0 auto; 
+}
+
+.footerColumnFlex {
+		width: 100%; 
+		padding: 0 0 2rem 0; 
+}
+
+.commission>p {
+		margin: 2rem auto 0 auto;
+		text-align: center; 
+		width: 80%; 
+}
+
+.inTouch p {
+	margin: 1em auto;
+	padding: 0;
+	text-align: center; 
+	width: 80%; 
+	
+}
+		
+.commission>ul {
+	margin: 0 0 0 1rem;
+}
+
+.commission>ul>li {
+	word-wrap: break-word; 
+}
+
+#menuOpenButton {
+	display: none; 
+}
+
+}
+
+@media screen and (max-width: 540px) {
+	.offerH1 {
+		display: none; 
+	}
+	
+	.offerSister {
+		padding: 1rem; 
+	}
+	
+	.hFrame {
+		max-height: 18em;
+	}
+	
+	.italic {
+		padding: 0.5em 0 0 0; 
+	}
+	
+	.navFlexMenuChild {
+		display: none;
+	}
+	
+	.frame {
+		display: none; 
+	}
+	
+	#menuOpenButton {
+		display: block; 
+	}
+	
+	.footerColumnFlex {
+		display: block; 
+		max-height: none; 
+		padding-bottom: 2rem; 
+	}
+	
+	.f {
+		margin: auto; 
+		
+	}
+}
+
+@media screen and (max-width: 450px) {
+		.hFrame {
+		max-height: 14rem;
+	}
+	
+	.aboutChild {
+		width: 80%; 
+	}
+	
+	.menuButton {
+		width: 40px;
+		height: 40px; 
+	}
+}
+
+@media screen and (max-width: 418px) {
+#realizeShowcase, .extraInfoRealize {
+	width: 100%;
+}
+
+.portfolioB {
+	width: 4rem;
+}
+
+.aProjectText {
+	max-width: 280px; 
+}
+
+li {
+	max-width: 300px;
+}
+
+ul {
+	margin: 0.6rem auto 0.6rem auto;
+}
+}
+
+@media screen and (max-width: 400px) {
+	.larger {
+		font-size: 0.8rem; 
+	}
+	
+	.commission {
+		background-image: none;
+		background: linear-gradient(to right, #ffffff, #d5c242);
+		
+	}
+	
+	
+	
+	footer, .f, .f>ul>li {
+		word-wrap: break-word;
+		overflow: auto; 
+		width: auto;
+		height: auto;
+		max-width: none; 
+		max-height: none; 
+	}
+}
+
+@media screen and (max-width: 362px) {
+	.hFrame {
+		max-height: 10rem;
+	}
+	
+	.italic {
+		font-size: 1rem; 
+		padding-top: 0; 
+	}
+	
+	h1 {
+		font-size: 1.5rem; 
+	}
+	
+	.navFlexContainer {
+		height: 4em;
+	}
+	
+	.aProjectText {
+	max-width: 200px; 
+}
+
+li {
+	max-width: 220px;
+}
+
+.dandelionProject {
+	font-size: 1.2rem; 
+}
+
+.commission {
+		background-image: none;
+		background: linear-gradient(to right, #ffffff, #d5c242);
+		
+	}
+	
+
+
+	
+
+}
+
+@media screen and (max-width: 312px) {
+	.portfolioB {
+		top: 5rem; 
+		
+	}
+	
+	.larger {
+		padding: 0; 
+	}
+	
+	.inTouch {
+		background-image: none;
+		background: linear-gradient(to right, #ffffff, #d5c242);	
+	}
+	
+	.forward, .back {
+		display: none; 
+	}
+	
+	.portfolioB p {
+		font-size: 0.9rem; 
+	}
+	
+	.portfolioB {
+		height: 2.5rem; 
+	}
+}
+
+@media screen and (max-width: 271px) {
+	.dandelionProject {
+	font-size: 1rem; 
+}
+
+.italic {
+	font-size: 0.8rem;
+}
+
+h4 {
+	padding: 0.7rem;
+	font-size: 1rem; 
+}
+
+canvas {
+	display: none; 
+}
+
+svg {
+	display: none;
+}
+
+.info {
+	height: auto; 
+	width: auto; 
+}
+
+.info>p, .info>h4 {
+	padding: 0; 
+	margin: 0 auto;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0; 
+	max-width: 150px; 
+}
+
+.ia {
+	margin-top: 0; 
+}
+}
+@media screen and (hover: none) {
+	.hover {
+		margin: 10em 0 0 0; 
+	width: 100%; 
+	}
+	
+	
+	
+	.aboutChild {
+		background-size: 100%; 
+		background-repeat: no-repeat;
+		top: 0; 
+		position: relative; 
+		background-position: top center; 
+		
+		
+	}
+	
+	#l, #m, #r {
+		visibility: visible;
+		width: auto;
+		margin: auto; 
+		height: auto; 
+		padding-bottom: 1rem; 
+		box-sizing: border-box; 
+		}
+	
+	#hl {
+		background-color: rgba(219, 208, 138, 1);
+	}
+	
+	#hm {
+		background-color: rgb(256, 256, 256);
+	}
+	
+	#hr {
+		background-color: rgba(147, 193, 226, 1);
+	}
+}
+
+@media screen and (hover: none) and (max-width: 760px) {
+	.hover {
+		margin-top: 8.5em;
+	}
+}
+
+@media screen and (hover: none) and (max-width: 271px) {
+		.hover {
+		margin-top: 8em
+		
+	}
+}
+
+@media screen and (max-width: 240px) {
+	.larger {
+		display: none; 
+	}
+	.menuButton {
+		width: 20px;
+		height: 20px;
+	}
+	
+	.hover {
+		margin-top: 5em
+		
+	}
+	
+	.hFrame {
+		max-height: 6rem;
+	}
+}
